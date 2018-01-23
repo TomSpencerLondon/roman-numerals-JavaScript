@@ -3,7 +3,11 @@
 var romanNumerals = function () {
 
   var convert = function (number) {
-    return "I";
+    if(number == 1){
+      return "I";
+    }else if(number == 5){
+      return "V";
+    }
   };
 
   return {
@@ -11,4 +15,4 @@ var romanNumerals = function () {
   };
 };
 
-module.exports = romanNumerals;
+module.exports = romanNumerals();
